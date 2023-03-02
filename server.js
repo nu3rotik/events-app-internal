@@ -48,7 +48,6 @@ app.get('/events', (req, res) => {
 app.post('/event', (req, res) => {
     db.addEvent(req)
         .then((data) => {
-            console.log(data);
             res.json(data);
         });
 });
